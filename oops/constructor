@@ -1,0 +1,10 @@
+constrctor of three type:
+ 1. no parameterized constrctor
+ 2. paramterized constructor
+ 3. copy constructor
+ 
+
+constructor rules:
+1.  contrsctor name and class name same
+2. constructor doesnt return  (int, float  doesnt work)
+3.  for one object only once constructor can be called 

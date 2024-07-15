@@ -1,0 +1,24 @@
+ methods in collections 
+1)add 
+2)size 
+3)remove 
+4)iterate 
+5)addall   
+6)removeall  
+7)clear 
+
+ list interface :
+
+ list  can be divided  into :
+  arraylist  
+  linkedlist 
+  dQueue -- ArraydQuee
+
+Queue types ->
+ 1) priority Queue
+ 2) double ended Queue->
+
+  set Interface :
+  1) Hashset 
+  2) Linked Hashset
+  3) Sortrd set  --->  Tree set 
