@@ -66,6 +66,25 @@ class binary{
 
 
    }
+   public static void print_in_range(NOde root , int x ,int y)
+   {
+    if(rorot== null)
+    {
+        return ;
+    }
+    if(root.data>=x && root.data <=y)
+       {
+        print_in_range(root.left,x,y);
+        System.out.println(root.data+" ");
+        print_in_range(root.right,x,y);
+       }else if(root.data >= y)
+       { 
+        print_in_range(root.left,x,y);
+       }
+       else{
+        print_in_range(root.right,x,y);
+       }
+   }
     public static void main(String args[])
     {
     //  in a binary search tree the lest childs are less than root node and  the right childs are greater than the root node 
@@ -85,5 +104,6 @@ if(search(root, 9))
 System.out.println(" element found");
 }else
  System.out.println(" element not found");
+ print_in_range(root,6,10);
     }
 }

@@ -1,5 +1,5 @@
 // import jav.util.LinkedList;
-import java.util.Scanner;
+// import java.util.Scanner;
 class list{
 Node head;
 private int size;
