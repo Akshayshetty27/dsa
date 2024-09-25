@@ -1,5 +1,5 @@
 //  1)  printing all permutations of a String 
-import java.util.*;
+// import java.util.;
 class permutation
 {
     //  permutation means  all possoble combination .

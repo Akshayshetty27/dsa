@@ -20,7 +20,7 @@ class aaa{
         int x;
          System.out.println(" enter the power ");
         x=sc.nextInt();
-        System.out.println(" "+n+" power 10 is : "+xpower(n,x));
+        System.out.println(" "+n+" power "+x+" is : "+xpower(n,x));
 
 }
 

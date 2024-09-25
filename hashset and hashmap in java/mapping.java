@@ -34,3 +34,10 @@ System.out.println("China "+" "+map.get("China"));
       }
     }
 }
+// functions
+// 1.put()
+// 2.get()
+// 3.containsKey()
+// 4.remove()
+// 5.size()
+// 6.keyset()

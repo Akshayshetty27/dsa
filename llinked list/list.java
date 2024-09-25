@@ -76,9 +76,9 @@ public void printlist()
         Node currentnode= head;
         while(currentnode != null)
         {
-            if(currentnode.data == n)
+            if(currentnode.data == "n")
             {
-                currentnode=currentnode.next.next;
+                currentnode=currentnode.next;
                 return;
             }
             else
