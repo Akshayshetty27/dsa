@@ -10,7 +10,7 @@ class array {
         //  operations:
         //             1) Addition  2) get  3) modify  4) delete  5)iteration /operation 
     //     we have to use Integer | Float | boolean   Classes 
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
 list.add(4);
 list.add(2);
 list.add(8);
