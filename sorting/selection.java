@@ -36,7 +36,8 @@ for(i=0;i<n-1;i++)
     }
     temp=arr[smallest];
     arr[smallest]=arr[i];
-    arr[i]=temp;}
+    arr[i]=temp;
+    }
 
 
 System.out.println(" the sorted array is ");
