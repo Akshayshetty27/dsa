@@ -15,6 +15,13 @@ class Main
         Student s3 = new Student();
         System.out.println(" "+s3.roll +" "+s3.name +" "+ s3.age);
         // this keyword acts as a  refference of an object creted of a class 
+
+
+      //  constructor overloading   based on the number of argue ment passsed in the function it can be called 
+
+      Student s6= new Student(12,"Aher",45);
+      System.out.println(s6.roll+" "+s6.name+" "+s6.age+" ");
+      
            }
 
     static  class Student 
@@ -22,6 +29,7 @@ class Main
       int roll;
       String name;
       int age;
+      // calling a constructrin a construcor 
       // parameterized constructors 
       Student(int roll ,String name ,int  mark1)
       {
@@ -33,10 +41,13 @@ class Main
       Student()
       {
         // System.out.println(" hello");
+        this(32,"akb",45);
         this.roll= 13;
         this.name="akhsay";
         this.age=21;
-        
+    
       }
     }
 }
+// allocation of memory in  new  key word is used 
+
