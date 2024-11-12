@@ -32,7 +32,7 @@ class rotate_M
             System.out.print(" "+ans[i][j]);
 
         }
-        System.out.println("");
+        SySPiral.stem.out.println("");
        }
     
     }
