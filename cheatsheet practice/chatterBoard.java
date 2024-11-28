@@ -32,7 +32,6 @@ class chatterBoard
             int r=nextPrime(n);
             System.out.print(""+r);
             n=r+1;
-            
         }
        
       j++;
