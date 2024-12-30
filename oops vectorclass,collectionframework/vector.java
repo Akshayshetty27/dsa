@@ -16,7 +16,7 @@ class vector
 
 
         // Enumeration in java 
-        //  enum is a class iwhich contains  constant 
+        //  enum is a class in which contains  constant 
         // by default they are  public static  and final 
         // cannot create child enums 
         // type is (class name )  in java 
