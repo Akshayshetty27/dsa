@@ -1,4 +1,4 @@
-class string1
+bclass string1
 {
     public static  void removea(String str,int i,String newstr)
     {
