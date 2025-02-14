@@ -20,6 +20,9 @@ class Demo
         {
 result= 18/1;
         System.out.println(e+" the default output : "+result);
+        }finally{
+                    System.out.println(" the finally block ");
+
         }
 
 

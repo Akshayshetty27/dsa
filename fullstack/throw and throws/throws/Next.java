@@ -2,6 +2,8 @@ class Next{
         public static void main(String args[]) throws Exception
     {
 
+        
+
 A obj = new A();
 
 
