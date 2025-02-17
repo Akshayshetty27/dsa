@@ -38,5 +38,11 @@ s.forEach( (n) -> {
                 .map(n ->  n * 2) 
                 .reduce( 0,(c, e) -> c + e);
    System.out.println(" "+res);
+
+   List<Integer> l= Arrays.asList( 4,5,3,1,9,6,7);
+   int r= l.stream().reduce(0 , (c , e) ->  c+e);
+for( int i : l)
+ System.out.print(" "+i);
+    System.out.println(" sum of :  "+r);
 }
 }
