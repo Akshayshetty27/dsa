@@ -3,7 +3,7 @@ class Que{
     static int front=-1;
     static int rear= -1;
     int arr[]= new int[max];
-    public void add(int data)
+    public void enque(int data)
     {
         if(rear + 1 == max)
         {
@@ -15,13 +15,13 @@ class Que{
             arr[++front  ] = data;
             rear++;
         }
-        else if( arr[(rear+ 1) % 10 ]  == 0){
+        else {
             
-            arr[++rear] = data;
+            arr[(++rear)% 10] = data;
         }
     }
 
-    public void delete()
+    public void deque()
     {
         if( front == -1 )
         {
@@ -54,22 +54,25 @@ class Que{
     {
 
         Que q= new Que();
-        q.add(5);
-        q.add(3);
-        q.add(1);
-        q.display();
-        q.delete();
-        q.delete();
+        q.enque(5);
+        q.enque(3);
 
-        q.delete();
-        q.delete();
-           q.add(5);
-        q.add(3);
-        q.add(1);
-        q.display();
+        q.enque(1);
+         q.display();
+        q.deque();
+           q.enque(5);
+        q.enque(3);
+        q.enque(1);
+       
 
+        q.display();    q.enque(5);
+        q.enque(3);
+        q.enque(1);
 
-
+   System.out.println();
+            q.display();
+        q.enque(3);
+        q.enque(1);
 
 
     }
