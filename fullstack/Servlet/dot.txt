@@ -1,0 +1,10 @@
+client sends the  request server
+server validates whether it is a valid page 
+sends the request for the web container 
+then web container contains each request is mapped with that request ( it will be achived using  web.xml) .
+
+
+ to avoid  web.xml 
+  we can use "annotations"  for mapping 
+
+  

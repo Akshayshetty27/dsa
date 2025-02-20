@@ -1,0 +1,25 @@
+  there are 7 steps to work with  JDBC    
+ 
+1.  import   package  from java 
+
+    import java.sql.* ;
+
+    main()   method 
+
+2  load and register the driver : 
+step  :   Class.forName( "com.mysql.jdbc.Driver");
+ 
+3 :    Connection  con = DriverManager .getConnection( " URL" , Username , Password )
+
+4.  statement st = con.createStatement(" string ");
+
+5 .  ResultSet rs = st.executeQuery("  write the query ");
+
+6 .   rs.next()  to move next column  
+        rs.getInt();   rs.getString();
+        rs.next();
+
+7 . st.close();  " Statement object " 
+    con.close();   " connnection object "
+
+          
