@@ -7,16 +7,19 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>abc</servlet-name>
-    <url-pattern>/get</url-pattern>
+    <url-pattern>/add</url-pattern>
   </servlet-mapping>
   
-  <servlet>
-  <servlet-name>bac</servlet-name>
-  <servlet-class>com.aksh.Demomul</servlet-class>
+ 
+  
+  
+    <servlet>
+  <servlet-name>ba</servlet-name>
+  <servlet-class>com.aksh.Demosquare</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>bac</servlet-name>
-    <url-pattern>/mul</url-pattern>
+    <servlet-name>ba</servlet-name>
+    <url-pattern>/sq</url-pattern>
   </servlet-mapping>
   
   
