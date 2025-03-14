@@ -1,0 +1,26 @@
+Missing Number
+Problem: You are given an array containing n distinct numbers taken from 0, 1, 2, ..., n. Find the missing number.
+🔹 Input: [3, 0, 1]
+🔹 Output: 2
+
+4. Check for Anagram
+Problem: Write a function to check if two strings are anagrams of each other.
+🔹 Input: "listen", "silent"
+🔹 Output: True
+
+5. Reverse Words in a String
+Problem: Given a string, reverse the order of words without changing the characters within the words.
+🔹 Input: "Hello World"
+🔹 Output: "World Hello"
+
+Maximum Subarray Sum: Write a program to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers. 
+CCODELEARNER.COM
+
+String Compression: Implement a method to perform basic string compression using the counts of repeated characters. For example, the string "aabcccccaaa" would become "a2b1c5a3". If the compressed string is not smaller than the original, return the original string. 
+PREPINSTA.COM
+
+Coin Box Assignment: Given an array representing coin IDs, assign each coin to a box based on the sum of its digits. For example, a coin with ID 321 has a digit sum of 6 (3+2+1), so it goes into box 6. Implement a function to determine the box assignments. 
+UNSTOP.COM
+
+Phone Number Conversion: Convert a phone number given in words into its numerical form. For example, "six four eight three" should be converted to "6483". Handle cases where repeating digits are described using words like "double" or "triple". 
+TECHPROGRAMMIND.COM
