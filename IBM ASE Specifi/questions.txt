@@ -1,3 +1,11 @@
+ Question: Longest Palindromic Substring (Hard)
+🔹 Problem Statement:
+Given a string S, find the longest palindromic substring in it.
+
+string rotation check 
+str1 = "coding"  
+str2 = "ingcod"  
+
 Missing Number
 Problem: You are given an array containing n distinct numbers taken from 0, 1, 2, ..., n. Find the missing number.
 🔹 Input: [3, 0, 1]
