@@ -1,5 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
 class Compress
 {
+
+    public static void alltogether(String str)
+    {
+
+    HashMap<Character , Integer > map  = new HashMap<>();
+    for( int i=0 ; i < str.length() -1  ; i++)
+    {
+        char ch = str.charAt(i);
+        int count= Character.getNumericValue(str.charAt(i + 1));
+        i++;
+        map.put( ch , map.getOrDefault(ch , 0)+ count);
+    }
+
+    StringBuilder sb = new StringBuilder();
+    for( Map.Entry<Character,Integer> e : map.entrySet())
+    {
+        sb.append(e.getKey());
+        sb.append(e.getValue());
+    }
+    
+    System.out.println(" "+sb.toString());
+    }
     public static void main(String args[])
     {
         String str="aabcccccaaa";
@@ -24,5 +48,6 @@ StringBuilder sb= new StringBuilder();
        }
 
        System.out.println(sb.toString());
+       alltogether(sb.toString());
     }
 }
