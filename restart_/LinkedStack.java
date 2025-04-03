@@ -52,6 +52,16 @@ public void display()
         temp= temp.next;
     }
 }
+
+public int top()
+{
+    if( head == null)
+    {
+        System.out.println("stack is empty ");
+        return 0;
+    }
+    return head.data;
+}
     public static void main(String args[])
     {
          LinkedStack  stack= new LinkedStack();
@@ -60,7 +70,8 @@ public void display()
          stack.push(3);
          stack.display();
          stack.pop();
-                  stack.display();
+        stack.display();
+        stack.pop();
 
              }
 }
