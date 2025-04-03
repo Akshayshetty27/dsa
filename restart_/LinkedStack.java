@@ -55,7 +55,7 @@ public void display()
     public static void main(String args[])
     {
          LinkedStack  stack= new LinkedStack();
-         stack.push(4); 
+         stack.push(2);
          stack.push(5);
          stack.push(3);
          stack.display();
