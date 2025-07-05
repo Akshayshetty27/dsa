@@ -33,7 +33,7 @@ class LinkedStack {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
-        System.out.println("null"); 
+        System.out.println("null"); // for better readability
     }
 
     public static void main(String args[]) {
