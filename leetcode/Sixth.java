@@ -4,6 +4,10 @@ class Sixth
     public static int strStr(String haystack, String needle) {
         int s = needle.length() ;
         int h = haystack.length() ;
+         if( s == h && haystack == needle  )
+        {
+            return 0;
+        }
     for( int i=0 ; i< h  - s ; i++)
     {
         if( haystack.substring(i , i + s ).equals(needle) )
