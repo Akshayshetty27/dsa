@@ -77,7 +77,7 @@ class Twelve
         q.display(); 
         System.out.println("Front element: " + q.peek());
         q.dequeue();
-        q.display(); // Output: 20 30
+        q.display(); 
         System.out.println("Front element: " + q.peek()); 
     }
 }
