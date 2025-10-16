@@ -11,11 +11,11 @@ class Family:
 # Single-level inheritance
 class Parent(Family):
     def __init__(self, family_name, parent_name):
-        super().__init__(family_name)  # Calls Family.__init__
+        super().__init__(family_name) 
         self.parent_name = parent_name
 
     def display(self):
-        super().display()  # Calls Family.display
+        super().display()  
         print(f"Parent Name: {self.parent_name}")
 
 
