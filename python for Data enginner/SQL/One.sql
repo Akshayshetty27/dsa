@@ -33,6 +33,4 @@ SET first_name = "AKSHAY A"
 WHERE employee_id = 1;
 
 
-
-
 SELECT first_name , last_name from  EMPLOYEES  where department="IT" AND salary >20000;
