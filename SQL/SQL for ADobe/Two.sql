@@ -37,3 +37,7 @@ FROM Employees
 GROUP BY department
 HAVING COUNT(*) > 5
     AND AVG(salary) > 50000;
+
+
+
+
