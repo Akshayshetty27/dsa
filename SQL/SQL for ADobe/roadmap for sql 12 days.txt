@@ -1,0 +1,46 @@
+Day,Topic (1 Hour),Focus & Goal,Key SQL/AEP Task
+1,AEP Data Model (XDM) Basics,"Understand XDM schema, ExperienceEvents, and Profile Schemas. Learn how data structures map to flat SQL tables (dot notation).",AEP UI: Browse a standard XDM Schema.
+
+
+2,Ingestion Volume Validation,Verify that the number of records ingested matches the source (batch or streaming). Check record counts and timestamps.,"SELECT COUNT(1) FROM dataset_name;  SELECT MAX(timestamp), MIN(timestamp) FROM dataset_name;"
+
+
+
+3,Data Type & Completeness Testing,"Use Spark SQL functions to check data quality. Identify NULLs, blanks, or incorrect data types for key analytics fields.",SELECT COUNT(1) FROM dataset WHERE eventType IS NULL;
+
+
+4,Identity Validation (Linking),"Focus on the Identity Map. Validate that primary IDs (e.g., ECID, email hash) are present and correctly mapped for Real-Time Customer Profile (RTCP) stitching.","SELECT identityMap.ECID[0].id, COUNT(1) FROM dataset GROUP BY 1 HAVING COUNT(1) > 1; (Find Duplicates)"
+
+
+
+
+
+ Day,Topic (1 Hour),Focus & Goal,Key SQL/AEP Task
+5,Flattening Nested Data,Use Lateral View (or UNNEST) to handle nested XDM arrays (like productListItems). Essential for commerce metrics.,"SELECT item.SKU, item.quantity FROM commerce_events LATERAL VIEW EXPLODE(productListItems) AS T, item;"
+
+
+6,Sessionization (ADF),"Learn and use AEP's Adobe-Defined Functions (ADFs) to group events into visitor sessions, a critical step for web analytics.","SELECT * FROM SESSIONIZE(dataset, 'timestamp', 30 * 60 * 1000); (30-min gap)"
+
+
+7,Attribution Modeling SQL,"Use Window Functions (LAG, LEAD) or ADFs to build basic attribution models (e.g., First Touch, Last Touch) on sequential events.","SELECT ..., LAG(channel) OVER (PARTITION BY personId ORDER BY timestamp) AS previous_channel FROM events;"
+
+
+8,Derived Dataset Creation (CTAS),Learn to create a Derived Dataset using CREATE TABLE AS SELECT (CTAS). This cleans/aggregates data for reporting tools or RTCP.,"CREATE TABLE clean_profile_data AS SELECT personId, COUNT(orderId) AS TotalOrders FROM ... GROUP BY 1;"
+
+
+
+ Day,Topic (1 Hour),Focus & Goal,Key SQL/AEP Task
+9,A/B Test Validation - Allocation,"Use SQL to validate that users were randomly and correctly split into A/B test groups (e.g., 50/50 split).","SELECT abTestID, variant, COUNT(DISTINCT personId) FROM events GROUP BY 1, 2;"
+
+
+10,A/B Test Validation - Metrics,"Calculate key metrics (Conversion Rate, Revenue per Visitor) per A/B variant to confirm the test results displayed in the reporting tool (e.g., CJA or Target) are mathematically correct.","SELECT variant, SUM(revenue) / COUNT(DISTINCT personId) FROM events GROUP BY 1;"
+
+
+11,Segmentation Service QA,"Use Query Service to reproduce and validate the results of a key segment built in the AEP Segmentation Service. (e.g., ""Users who viewed Product X but didn't buy"").",Complex WHERE clauses and Joins mimicking the segment logic.
+
+
+12,External BI Tool Connectivity,"Understand how to use the PostgreSQL connector in VS Code (or a dedicated tool like Tableau/DBeaver) to query AEP, moving from the AEP UI to external reporting.",VS Code: Configure and run a simple query using your external tool's credentials (or mock this step).
+
+
+
+

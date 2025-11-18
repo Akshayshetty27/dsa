@@ -1,0 +1,5 @@
+Day,Topic (1 Hour),Focus & Goal,Key SQL/AEP Task
+1,AEP Data Model (XDM) Basics,"Understand XDM schema, ExperienceEvents, and Profile Schemas. Learn how data structures map to flat SQL tables (dot notation).",AEP UI: Browse a standard XDM Schema.
+2,Ingestion Volume Validation,Verify that the number of records ingested matches the source (batch or streaming). Check record counts and timestamps.,"SELECT COUNT(1) FROM dataset_name;  SELECT MAX(timestamp), MIN(timestamp) FROM dataset_name;"
+3,Data Type & Completeness Testing,"Use Spark SQL functions to check data quality. Identify NULLs, blanks, or incorrect data types for key analytics fields.",SELECT COUNT(1) FROM dataset WHERE eventType IS NULL;
+4,Identity Validation (Linking),"Focus on the Identity Map. Validate that primary IDs (e.g., ECID, email hash) are present and correctly mapped for Real-Time Customer Profile (RTCP) stitching.","SELECT identityMap.ECID[0].id, COUNT(1) FROM dataset GROUP BY 1 HAVING COUNT(1) > 1; (Find Duplicates)"
