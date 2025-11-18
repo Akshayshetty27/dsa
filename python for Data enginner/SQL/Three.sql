@@ -13,7 +13,8 @@ CREATE TABLE orders (
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
---  inserting sample  input for the table  to perform  Join operation 
+--  inserting sample  input for the table  to perform  Join operation
+ 
  INSERT into customers (customer_id, customer_name, contact_email) VALUES
  (1, 'Alice ','alice@gmail.com'),
  (2, 'Bob ','bobthehunter@gmail.com'),
