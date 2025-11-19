@@ -29,3 +29,11 @@ SELECT
     sales - LAG(sales, 1) OVER (ORDER BY month) AS diff
 FROM monthly_sales;
 
+
+select name ,
+    amount ,
+    sum(amount) over (PARTITION BY
+        name
+        ORDER BY amount) as running_total_per_name  
+from sales_data;
+
