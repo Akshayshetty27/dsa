@@ -30,4 +30,4 @@ where emp_dept =(
         from departments
         where d_name = 'Sales'
     );
-
+    
