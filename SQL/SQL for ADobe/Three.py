@@ -17,3 +17,7 @@ print("Uppercase:", my_string.upper())
 print("Lowercase:", my_string.lower())
 print("Stripped String:", my_string.strip())
 
+
+print( max(my_list));
+print( min(my_list));
+print( sum(my_list));
